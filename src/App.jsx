@@ -11,6 +11,7 @@ import {
 } from './components/LiquidGlassUI';
 import CodeExample from './components/CodeExample';
 import './App.css';
+import heroWatchImage from './assets/hero-watch.png';
 
 const FEATURE_CARDS = [
   {
@@ -444,7 +445,7 @@ function App() {
         >
           <div className="hero-visual-frame liquid-glass glass-shadow-primary">
             <img
-              src="/hero-watch.png"
+              src={heroWatchImage}
               alt="MOV wearable visualization"
               className="hero-visual-image"
               loading="lazy"
