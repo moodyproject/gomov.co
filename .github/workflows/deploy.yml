@@ -28,6 +28,12 @@ jobs:
     - name: Build
       run: npm run build
       
+    - name: Ensure CNAME file exists
+      run: |
+        if [ ! -f dist/CNAME ]; then
+          echo "gomov.co" > dist/CNAME
+        fi
+      
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
