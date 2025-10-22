@@ -44,7 +44,7 @@ jobs:
     - name: Ensure CNAME file exists
       run: |
         if [ ! -f dist/CNAME ]; then
-          echo "gomov.co" > dist/CNAME
+          echo "www.gomov.co" > dist/CNAME
         fi
       
     - name: Setup Pages
